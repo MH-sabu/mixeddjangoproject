@@ -1,0 +1,13 @@
+{% extends "first/base.html" %}
+
+{% block main%}
+
+<p>{{ object_list.count }} restaurants found.</p>
+
+    {% for item in object_list %}
+        <a href="{{ item.id }}/">{{ item.name }}</a> <br>
+    {% empty %}
+        There is no restaurant list available at the moment.
+    {% endfor %}
+
+{% endblock %}

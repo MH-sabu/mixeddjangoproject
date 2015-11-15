@@ -1,0 +1,50 @@
+.header {
+             background-color: #3976a7;
+             margin-top: -29px;
+             margin-bottom: 0px;
+             margin-right: -29px;
+             margin-left: -29px;
+             padding-top: 20px;
+             padding-right: 20px;
+             padding-bottom: 20px;
+             padding-left: 20px;
+             height :10%
+              }
+
+    .body {
+         background-color: #cfe0ef;
+	 color: black;
+	 padding: 20px;
+	 font-family: Arial, Verdana, sans-serif;}
+                       
+   .h {
+       position: absolute;
+       right: 10px;
+       top: 200px;
+          }
+ 
+ 
+   .login {
+         position: absolute;
+         right: 100px;
+         top: 100px;
+          }
+
+  div#content {
+    width: 75%;
+    margin: 0 auto;
+    padding: 100px;
+    border: 1px solid #ccc;
+
+}
+div#first {
+        position: absolute;
+        top: 45%;
+        right: 50% ;
+
+        
+    }
+.h1 {
+    text-align: center;
+}
+

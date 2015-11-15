@@ -1,0 +1,14 @@
+{% extends "first/base.html" %}
+
+{% block main %}
+
+<form action="" method="POST"> {% csrf_token %}
+    {{ form.restaurant.as_hidden }}
+    {{ form.user.as_hidden }}
+    <label for="rating">Rating:</label>
+    {{ form.rating }}
+
+    <input type="submit" value="Submit" />
+</form>
+
+{% endblock %}

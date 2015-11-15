@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> MiReder </title> 
+   <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+  </head>
+
+   <body class="body">
+     <div class="header">
+
+     <h1> MiReder </h1>
+     </div>  
+    <div id="first">
+      
+        <form  method="post" action="/search/misearch/">
+            {% csrf_token %}
+             <input type="text" name="search" value="" size="20" />
+            
+
+             <input type="submit" value="search" />
+        </form>
+      
+     </div>
+  
+   </body>
+</html>
+         

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+
+<div id="sidebar">
+    {% block sidebar %}
+        <a href="/first/home/">home</a>
+        <a href="/first/restaurants/">restaurants</a>
+        <a href="/first/write_review/">write a review</a>
+        <a href="/first/search_food/">search food</a>
+        <a href="/first/logout/">logout</a>
+    {% endblock %}
+</div>
+
+<div id="main">
+    {% block main %}
+    {% endblock %}
+</div>
+</body>
+</html>

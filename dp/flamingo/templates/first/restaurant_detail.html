@@ -1,0 +1,20 @@
+{% extends "first/base.html" %}
+
+{% block main %}
+<h1>{{ object.name }}</h1>
+<p>{{ object.address }}</p>
+<p>Contact: {{ object.phone }}</p>
+<p>Rating: {{ avgrating }} (rated by {{ rating.count }} users) <a href="{% url 'rate' object.id %}">rate</a></p>
+
+<a href="{% url 'write_review_restaurant' object.id %}">Write a review</a> for this restaurant.
+
+<h2>Reviews:</h2>
+{% for item in review %}
+    <p>{{ item.review }}</p>
+    <i>Posted by {% if item.user == user.username %} me {% else %} {{ item.user }} {% endif %} on {{ item.time }}.</i>
+    <p>{% if item.user_id == user.id %}<a href="review/{{ item.id }}/update/">edit</a> | <a href="review/{{ item.id }}/delete/">delete</a>{% endif %}</p>
+    <hr>
+{% empty %}
+There are currently no reviews for this restaurant. Be the first to <a href="/first/write_review/">submit a review</a>.
+{% endfor %}
+{% endblock %}

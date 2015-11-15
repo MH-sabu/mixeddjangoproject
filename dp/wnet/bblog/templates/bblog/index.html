@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+  <head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+
+                <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.min.css" %}" /> <!-- CSS -->
+                <link rel="stylesheet" href="{% static "includes/css/bootstrap-glyphicons.css" %}" /> <!-- CSS -->
+                <link rel="stylesheet" href="{% static "includes/css/styles.css" %}" /> <!-- CSS -->
+
+		<!-- Custom CSS -->
+
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="{% static "includes/js/modernizr-2.6.2.min.js" %}"></script>
+		
+  </head>
+  <body>
+     <div class="container" id="main">
+
+	<div class="navbar navbar-fixed-top">
+           <div class="container">
+               <a class="navbar-brand" href="/"><img src="{% static "images/logo.png" alt="Your Logo %}"></a>
+
+
+
+           </div>
+	</div><!-- end navbar -->
+	
+	
+	<div class="carousel slide" id="myCarousel">
+	
+	</div><!-- end myCarousel -->
+	
+	
+	<div class="row" id="bigCallout">
+
+	</div><!-- end row -->
+	
+	
+	<div class="row" id="featuresHeading">
+
+	</div><!-- end row -->
+	
+	
+	<div class="row" id="features">
+
+	</div><!-- end row -->
+	
+	
+	<div class="row" id="moreInfo">
+
+	</div><!-- end row -->
+	
+	
+	<div class="row" id="moreCourses">
+		
+	</div><!-- end row -->
+	
+     </div><!-- end container -->
+
+    <footer>
+	
+   </footer>
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+
